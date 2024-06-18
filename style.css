@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+body, html {
+  background: linear-gradient(to top right, #FFA500, #FFFF00);
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use viewport height for full-screen height */
+  margin: 0;
+}
+
+.search-container {
+  position: relative;
+}
+
+input[type="text"] {
+  width: 80%; /* Adjust width as needed */
+  max-width: 300px; /* Limit maximum width */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: linear-gradient(to bottom right, #FFA500, #FFFF00);
+  color: black;
+}
+
+.input-container {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 5px); /* Position suggestions below input box */
+  left: 0;
+  width: 100%; /* Make suggestions as wide as the input box */
+  max-width: 300px; /* Limit maximum width */
+  background: linear-gradient(to bottom right, #FFA500, #FFFF00);
+  border: 1px solid #d4d4d4;
+  border-top: none;
+  max-height: 200px; /* Adjust max-height as needed */
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 10px;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #FFA500, #FFFF00);
+  border-bottom: 1px solid #d4d4d4;
+}
+
+ul li:hover {
+  background: linear-gradient(to bottom right, #FFA500, #FFFF00);
+}
